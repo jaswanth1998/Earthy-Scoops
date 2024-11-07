@@ -1,0 +1,104 @@
+/* Navbar.css */
+
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.navbar-logo img {
+    height: 40px;
+}
+
+.navbar-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.navbar-links li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+}
+
+.mobile-menu-icon {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .navbar-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        border-top: 1px solid #ddd;
+    }
+
+    .navbar-links.mobile {
+        display: flex;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+    }
+}
+
+.poster{
+    width: 100vw;
+    height: 90vh;
+}
+
+
+.banner {
+    background-image: url('./../../assets/Poster.png'); 
+    background-size: cover;
+    background-position: center;
+    height: 100vh;  /* Adjust as per your needs */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.5);  /* Semi-transparent overlay */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .overlay h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .order-button {
+    background-color: #ff0000; /* Red button */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .order-button:hover {
+    background-color: #cc0000;  /* Darker red on hover */
+  }
+  
